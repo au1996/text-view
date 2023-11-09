@@ -1,6 +1,7 @@
 import vue from 'rollup-plugin-vue'
 import postcss from 'rollup-plugin-postcss'
 import typescript from 'rollup-plugin-typescript2'
+import dts from 'rollup-plugin-dts'
 import pkg from './package.json' assert { type: 'json' }
 
 const banner = `/**
@@ -38,5 +39,13 @@ export default [
       },
     ],
     external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
+  },
+  {
+    input: 'src/index.ts',
+    plugins: [dts()],
+    output: {
+      format: 'esm',
+      file: 'dist/index.d.ts',
+    },
   },
 ]

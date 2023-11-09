@@ -1,10 +1,11 @@
 {
   "name": "text-view",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A vue text component",
   "author": "au1996",
   "main": "dist/text-view.umd.js",
   "module": "dist/text-view.es.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "files": [
     "src",
