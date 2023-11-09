@@ -1,0 +1,44 @@
+{
+  "name": "text-view",
+  "version": "0.0.1",
+  "description": "A vue text component",
+  "author": "au1996",
+  "main": "dist/text-view.umd.js",
+  "module": "dist/text-view.es.js",
+  "type": "module",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "rollup -c",
+    "test": "vitest"
+  },
+  "keywords": [
+    "text",
+    "vue",
+    "components"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/au1996/text-view/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "@vue/test-utils": "^2.0.0",
+    "jsdom": "^22.1.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.69.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vitest": "^0.34.6"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  }
+}
