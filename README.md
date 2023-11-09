@@ -24,7 +24,6 @@ yarn add text-view
 ### Basic Using
 
 main.js
-
 ```js
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -35,7 +34,6 @@ app.use(TextView)
 ```
 
 App.vue
-
 ```vue
 <template>
   <TextView :content="text" :line="1" />
@@ -56,5 +54,5 @@ const text = ref('这里是很长的一段文本')
 | close-text        | 控制收起按钮文本     | string | 收起    |
 | link              | 控制是否跳转外部链接 | string | -       |
 | content-color     | 文本颜色             | string | -       |
-| button-background | 按钮背景颜色         | string | #fff    |
 | button-color      | 按钮字体颜色         | string | #077fef |
+| button-background | 按钮背景颜色         | string | #fff    |
