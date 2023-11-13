@@ -1,12 +1,17 @@
 {
   "name": "text-view",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A vue text component",
   "author": "au1996",
   "main": "dist/text-view.umd.js",
   "module": "dist/text-view.es.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "rollup -c",
+    "test": "vitest"
+  },
   "files": [
     "src",
     "dist"
@@ -16,11 +21,6 @@
     "vue",
     "components"
   ],
-  "scripts": {
-    "dev": "vite",
-    "build": "rollup -c",
-    "test": "vitest"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",

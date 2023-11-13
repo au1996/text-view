@@ -15,22 +15,22 @@
       button-color="blue"
     />
     <br />
-    <h2>参数：:content="text" :line="4"</h2>
-    <TextView :content="text" :line="4" />
+    <h2>参数：:content="text" :rows="4"</h2>
+    <TextView :content="text" :rows="4" />
     <br />
-    <TextViewDist :content="text" :line="4" />
+    <TextViewDist :content="text" :rows="4" />
     <br />
-    <h2>参数：:content="text" :line="1" open-text="查看" close-text="关闭"</h2>
-    <TextView :content="text" :line="1" open-text="查看" close-text="关闭" />
+    <h2>参数：:content="text" :rows="1" open-text="查看" close-text="关闭"</h2>
+    <TextView :content="text" :rows="1" open-text="查看" close-text="关闭" />
     <br />
-    <TextViewDist :content="text" :line="1" open-text="查看" close-text="关闭" />
+    <TextViewDist :content="text" :rows="1" open-text="查看" close-text="关闭" />
     <br />
-    <h2>参数：:content="text" :line="1" open-text="跳转链接"</h2>
-    <TextView :content="text" :line="1" open-text="跳转链接" link="https://au1996.gitee.io/blog/" />
+    <h2>参数：:content="text" :rows="1" open-text="跳转链接"</h2>
+    <TextView :content="text" :rows="1" open-text="跳转链接" link="https://au1996.gitee.io/blog/" />
     <br />
     <TextViewDist
       :content="text"
-      :line="1"
+      :rows="1"
       open-text="跳转链接"
       link="https://au1996.gitee.io/blog/"
     />

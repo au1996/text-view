@@ -5,7 +5,7 @@
       v-show="!visible"
       :ref="refs.ellipsisRef"
       class="ellipsis"
-      :style="{ '-webkit-line-clamp': line }"
+      :style="{ '-webkit-line-clamp': rows }"
     >
       {{ content }}
     </div>
@@ -28,7 +28,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  line: {
+  rows: {
     type: Number,
     default: 2,
   },
