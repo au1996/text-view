@@ -59,7 +59,7 @@ const props = defineProps({
 })
 
 watch(
-  () => props.content,
+  () => [props.content, props.rows],
   () => {
     initVisible()
   }
