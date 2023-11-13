@@ -1,5 +1,8 @@
 <template>
   <div>
+    <h2>参数：content="测试文本"</h2>
+    <TextView content="测试文本" />
+    <br />
     <h2>参数：:content="text"</h2>
     <TextView :content="text" />
     <br />
@@ -34,6 +37,7 @@
       open-text="跳转链接"
       link="https://au1996.gitee.io/blog/"
     />
+    <br />
   </div>
 </template>
 
