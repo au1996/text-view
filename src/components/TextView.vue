@@ -1,14 +1,13 @@
 <template>
   <div class="xy-vue-text-tooltip-box" :style="{ color: contentColor }">
-    <div v-if="visible">{{ content }}</div>
+    <div v-if="visible" v-html="content"></div>
     <div
       v-show="!visible"
       :ref="refs.ellipsisRef"
-      class="ellipsis"
       :style="{ '-webkit-line-clamp': rows }"
-    >
-      {{ content }}
-    </div>
+      class="ellipsis"
+      v-html="content"
+    ></div>
     <div
       v-show="btnVisible"
       class="btn"
