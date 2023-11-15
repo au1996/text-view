@@ -10,9 +10,8 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import distCom from '../../dist/text-view.es'
+import TextView from '../../src/components/TextView.vue'
 
-const TextView = distCom.TextView
 const originText = '风花雪月测试是否换行嘻嘻哈哈琴棋书画唱跳Rap'
 const textRef = ref(null)
 const text = ref(originText)
