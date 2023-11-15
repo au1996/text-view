@@ -8,6 +8,10 @@
   <a href="https://packagequality.com/#?package=text-view"><img src="https://packagequality.com/shield/text-view.svg" alt="Package Quality"/></a>
 </p>
 
+## Documentation
+
+https://au1996.github.io/text-view/
+
 ## Getting started
 
 ### Installation
