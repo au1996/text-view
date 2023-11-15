@@ -1,6 +1,6 @@
 {
   "name": "text-view",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A vue text component",
   "author": "au1996",
   "main": "dist/text-view.umd.js",
@@ -10,7 +10,9 @@
   "scripts": {
     "dev": "vite",
     "build": "rollup -c",
-    "test": "vitest"
+    "test": "vitest",
+    "dev-docs": "vitepress dev docs",
+    "build-docs": "vitepress build docs"
   },
   "files": [
     "src",
@@ -41,6 +43,7 @@
     "sass": "^1.69.5",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vitepress": "^1.0.0-rc.25",
     "vitest": "^0.34.6"
   },
   "peerDependencies": {

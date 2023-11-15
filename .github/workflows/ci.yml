@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js v16.18.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.18.0'
+
+      - name: Install
+        run: npm install
+
+      - name: Build
+        run: npm run build-docs
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./docs/.vitepress/dist
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          commit_message: deploy
