@@ -108,7 +108,7 @@ const handleView = () => {
 
   .btn {
     position: absolute;
-    right: 4px;
+    right: 0;
     bottom: 0;
     padding-left: 2px;
     text-align: right;
