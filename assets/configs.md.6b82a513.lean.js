@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as l,Q as d}from"./chunks/framework.c14a64eb.js";const h=JSON.parse('{"title":"TextView API","description":"","frontmatter":{},"headers":[],"relativePath":"configs.md","filePath":"configs.md"}'),a={name:"configs.md"},n=d("",5),i=[n];function s(r,f,o,g,x,y){return e(),l("div",null,i)}const _=t(a,[["render",s]]);export{h as __pageData,_ as default};
