@@ -43,6 +43,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  isClick: {
+    type: Boolean,
+    default: false,
+  },
   contentColor: {
     type: String,
     default: '',
@@ -56,6 +60,8 @@ const props = defineProps({
     default: '#077fef',
   },
 })
+
+const emit = defineEmits(['btn-click'])
 
 watch(
   () => [props.content, props.rows],
@@ -86,11 +92,18 @@ onMounted(() => {
 })
 
 const handleView = () => {
+  emit('btn-click')
+
+  // 无需走后面逻辑
+  if (props.isClick) return
+
+  // 跳转链接
   if (props.link) {
     window.open(props.link)
     return
   }
 
+  // 常规切换
   visible.value = !visible.value
 }
 </script>

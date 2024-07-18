@@ -5,19 +5,20 @@ export default {
   base: '/text-view/',
   themeConfig: {
     logo: { src: '/images/logo.png', width: 24, height: 24 },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/au1996/text-view' }],
     repo: 'au1996/text-view',
     docsRepo: 'au1996/text-view',
     docsDir: 'docs',
     docsBranch: 'master',
     editLinks: true,
-    nav: [{ text: 'Guide', link: '/getting-started' }],
+    nav: [{ text: '指南', link: '/installation' }],
     sidebar: [
       {
-        text: 'Introduction',
+        text: '阅读指南',
         items: [
-          { text: 'Getting Started', link: '/getting-started' },
-          { text: 'Configs', link: '/configs' },
-          { text: 'Examples', link: '/examples' },
+          { text: '安装', link: '/installation' },
+          { text: '配置', link: '/configs' },
+          { text: '示例', link: '/examples' },
         ],
       },
     ],

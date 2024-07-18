@@ -4,14 +4,11 @@ layout: home
 hero:
   name: text-view
   image: /images/logo.png
-  tagline: A text display folding component based on Vue 3 version.
+  tagline: 基于Vue3的文本显示折叠组件
   actions:
     - theme: brand
-      text: Get Started
-      link: /getting-started
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/au1996/text-view
+      text: 立即开始
+      link: /installation
 
 features:
   - icon: 🧁

@@ -1,5 +1,11 @@
 <template>
-  <TextView ref="textRef" :content="text" :link="link" open-text="跳转链接" />
+  <TextView
+    ref="textRef"
+    :content="text"
+    :is-click="true"
+    open-text="打开弹窗"
+    @btn-click="btnClick"
+  />
 </template>
 
 <script setup>
@@ -9,7 +15,6 @@ import TextView from '../../src/components/TextView.vue'
 const originText = '风花雪月测试是否换行嘻嘻哈哈琴棋书画唱跳Rap'
 const textRef = ref(null)
 const text = ref(originText)
-const link = 'https://au1996.github.io/blog/'
 
 onMounted(() => {
   const { clientWidth } = textRef.value.$el
@@ -17,4 +22,8 @@ onMounted(() => {
     text.value += originText
   }
 })
+
+const btnClick = () => {
+  window.alert(text.value)
+}
 </script>

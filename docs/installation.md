@@ -1,24 +1,26 @@
-# Getting started
+# 快速开始
 
-## Installation
+本节将介绍如何在项目中使用 `text-view`
 
-First step is to install it using `npm` or `yarn`:
+## 安装
+
+第一步是使用 npm 或 yarn 安装它：
 
 ```bash
-npm install text-view
+npm install text-view --save
 
-# or use yarn
+# 或者使用 yarn
 yarn add text-view
 ```
 
-## Basic Using
+## 用法
 
 main.js
 
 ```js
 import { createApp } from 'vue'
-import App from './App.vue'
 import TextView from 'text-view'
+import App from './App.vue'
 
 const app = createApp(App)
 app.use(TextView)

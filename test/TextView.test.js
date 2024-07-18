@@ -40,7 +40,7 @@ describe('mount component', () => {
     const wrapper = mount(TextView, {
       props: {
         content: '测试文本',
-        link: 'https://au1996.gitee.io/blog/',
+        link: 'https://au1996.github.io/blog/',
       },
     })
 

@@ -5,10 +5,11 @@ import ExampleBasic from './examples/ExampleBasic.vue'
 import ExampleRows from './examples/ExampleRows.vue'
 import ExampleButtonText from './examples/ExampleButtonText.vue'
 import ExampleLink from './examples/ExampleLink.vue'
+import ExampleBtnClick from './examples/ExampleBtnClick.vue'
 import ExampleColor from './examples/ExampleColor.vue'
 </script>
 
-## [基本使用](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleBasic.vue)
+## [基础用法](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleBasic.vue)
 
 <ExampleBasic />
 
@@ -25,7 +26,7 @@ const text = ref('风花雪月测试是否换行嘻嘻哈哈琴棋书画唱跳Ra
 </script>
 ```
 
-## [rows](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleRows.vue)
+## [控制行数](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleRows.vue)
 
 <ExampleRows />
 
@@ -42,7 +43,7 @@ const text = ref('风花雪月测试是否换行嘻嘻哈哈琴棋书画唱跳Ra
 </script>
 ```
 
-## [open-text & close-text](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleButtonText.vue)
+## [展开/收起：按钮文本](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleButtonText.vue)
 
 <ExampleButtonText />
 
@@ -59,7 +60,7 @@ const text = ref('风花雪月测试是否换行嘻嘻哈哈琴棋书画唱跳Ra
 </script>
 ```
 
-## [link](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleLink.vue)
+## [链接按钮](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleLink.vue)
 
 <ExampleLink />
 
@@ -77,7 +78,28 @@ const link = 'https://au1996.gitee.io/blog/'
 </script>
 ```
 
-## [Color](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleColor.vue)
+## [按钮点击事件](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleBtnClick.vue)
+
+<ExampleBtnClick />
+
+```vue
+<template>
+  <TextView :content="text" :is-click="true" open-text="打开弹窗" @btn-click="btnClick" />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+
+// 注意这里的文本是能够超出换行的字数
+const text = ref('风花雪月测试是否换行嘻嘻哈哈琴棋书画唱跳Rap...')
+
+const btnClick = () => {
+  window.alert(text.value)
+}
+</script>
+```
+
+## [文本背景颜色](https://github.com/au1996/text-view/blob/master/docs/examples/ExampleColor.vue)
 
 <ExampleColor />
 
