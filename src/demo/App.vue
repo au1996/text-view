@@ -66,9 +66,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import distCom from '../../dist/text-view.es'
-const TextViewDist = distCom.TextView
+import dist_component from '../../dist/text-view.js'
 
+const TextViewDist = dist_component.TextView
 const text = ref('')
 const originText = '风花雪月测试是否换行嘻嘻哈哈琴棋书画唱跳Rap'
 const initText = () => {

@@ -1,5 +1,5 @@
 <template>
-  <div class="xy-vue-text-tooltip-box" :style="{ color: contentColor }">
+  <div class="xy-vue-text-view-box" :style="{ color: contentColor }">
     <div v-if="visible" v-html="content"></div>
     <div
       v-show="!visible"
@@ -109,7 +109,7 @@ const handleView = () => {
 </script>
 
 <style lang="scss">
-.xy-vue-text-tooltip-box {
+.xy-vue-text-view-box {
   position: relative;
   .ellipsis {
     display: -webkit-box;
